@@ -1,0 +1,37 @@
+{
+  "name": "web-toothbrush",
+  "version": "0.1.0",
+  "description": "Web Bluetooth based JS library for connecting to a smart toothbrush from your browser",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint --project .",
+    "clean": "rimraf dist dist-test",
+    "compile": "npm run clean && tsc",
+    "compile-test": "npm run clean && tsc -m commonjs --outDir dist-test",
+    "pretest": "npm run lint && npm run compile-test",
+    "test": "mocha --recursive --check-leaks --globals addresses"
+  },
+  "keywords": [
+    "toothbrush",
+    "web-bluetooth",
+    "bluetooth",
+    "ble",
+    "iot",
+    "dental"
+  ],
+  "author": {
+    "name": "Filip Stanis",
+    "email": "filip@stanis.me",
+    "url": "https://stanis.me"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/web-bluetooth": "0.0.4",
+    "expect": "^23.6.0",
+    "mocha": "^5.2.0",
+    "rimraf": "^2.6.3",
+    "tslint": "^5.12.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.2.2"
+  }
+}

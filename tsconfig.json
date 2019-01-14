@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "lib": ["es2017", "dom"],
+    "target": "ES6",
+    "module": "ES2015",
+    "declaration": true,
+    "strict": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "src/**/*"
+  ],
+}
